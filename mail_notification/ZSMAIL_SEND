@@ -1,0 +1,14 @@
+@EndUserText.label : 'Таблица для отправки'
+@AbapCatalog.enhancementCategory : #EXTENSIBLE_ANY
+define structure zsmail_send {
+  email              : ze_email;
+  role               : agr_name_c;
+  topic_msg          : ze_topic_msg;
+  text_msg           : ze_text_msg;
+  pattern_msg        : smtg_tmpl_id;
+  ind_send           : flag;
+  placeholders_body  : ztt_mail_placeholders_data;
+  placeholders_topic : ztt_mail_placeholders_data;
+  attachments        : ztt_mail_attachments;
+
+}
